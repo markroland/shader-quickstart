@@ -35,6 +35,18 @@ Use a server like Node's [http-server](https://www.npmjs.com/package/http-server
 npx http-server ./vanilla-webgl/src
 ```
 
+### importmap-webgl: Use JavaScript Import Map
+
+JavaScript Import Maps support modular programming directly in the browser without the need
+for build tools. This adds a simple layer of abstraction compared to putting all of the JS and
+GLSL directly in an HTML file. The shaders are written in GLSL, but wrapped in a template literal
+and then exported from their JS module. This avoids any additional requirement of a glsl parser
+if they were to be loaded as raw shader files.
+
+```
+npx http-server ./importmap-webgl/src
+```
+
 ### vite-webgl: WebGL using JavaScript compiled/served using Vite
 
 [Vite](https://vitejs.dev) is a fast build tool. This project uses Vite to serve the project,

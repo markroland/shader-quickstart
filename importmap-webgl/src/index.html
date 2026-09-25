@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Importmap WebGL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "vertexShader": "/assets/shaders/vertexShader.js",
+        "fragmentShader": "/assets/shaders/fragmentShader.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
