@@ -46,6 +46,16 @@ easier to read because it isn't inside a JavaScript string.
 npx http-server ./vanilla-webgl-script-tag/src
 ```
 
+### vanilla-webgl-async: Shaders in separate GLSL files
+
+The shaders live in their own `.glsl` files and are loaded with `fetch()`. This keeps the GLSL out
+of the HTML entirely, so editors can give it proper syntax highlighting, without needing a build
+tool. Because of the `fetch()`, the page must be served over HTTP.
+
+```
+npx http-server ./vanilla-webgl-async/src
+```
+
 ### importmap-webgl: Use JavaScript Import Map
 
 JavaScript Import Maps support modular programming directly in the browser without the need
