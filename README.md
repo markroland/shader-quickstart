@@ -35,6 +35,17 @@ Use a server like Node's [http-server](https://www.npmjs.com/package/http-server
 npx http-server ./vanilla-webgl/src
 ```
 
+### vanilla-webgl-script-tag: Shaders in script tags
+
+Same as `vanilla-webgl`, but instead of enclosing the shader code in a template literal, each shader
+is wrapped in a `<script>` tag with an `x-shader` MIME type (`x-shader/x-vertex` and
+`x-shader/x-fragment`) and read from the DOM. Everything is still in one file, and the GLSL is
+easier to read because it isn't inside a JavaScript string.
+
+```
+npx http-server ./vanilla-webgl-script-tag/src
+```
+
 ### importmap-webgl: Use JavaScript Import Map
 
 JavaScript Import Maps support modular programming directly in the browser without the need
